@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----- */
+:root {
+	--color-light: #f3efe0;
+	--color-dark: #434343;
+	--color-highlight: #22a39f;
+	--color-title: #FE9920;
+}
+html {
+  box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	//font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	background-color: var(--color-dark);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+a {
+	color: #22a39f;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+  background-color: var(--color-dark);
+	padding: 50px 30px;
+}
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+h1 {
+	font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+	color: var(--color-title);
+	font-size: 3rem;
+	margin-right: 30px;
+}
+.contact h1 span {
+	position: relative;
+	left: 20px;
+	color: #FA7921;
+}
+address {
+	margin-top:20px;
+}
+address a {
+	display: block;
+	text-align: right;
+}
+.about p {
+	margin-bottom: 2rem;
+}
+h2 {
+	font-size: 2rem;
+	margin: 1.2rem 0;
+	color: var(--color-highlight);
+}
+
+h3 {
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+h4 {
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: .5rem;
+}
+p {
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+}
+main {
+	padding: 60px 20px;
+	background-color: var(--color-light);
+	padding: 2rem;
+}
+.container {
+	max-width: 920px;
+	margin: 0 auto;
+}
+header {
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+hr {
+	margin: 4rem 8%;
+	border: 0;
+	border-top: 1px solid var(--color-dark);
+	opacity: 0.5;
+}
+
+.time {
+	padding-top:0.8rem;
+}
+.experience {
+	margin-bottom: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.education {
+	padding-top: 1rem;
+}
+.experience .left, .experience .right {
+	flex-basis: 100%;
+	max-width: 100%;
+	flex: 0 0 auto;
+}
+.experience .left {
+	padding-bottom: 1.5rem;
+	min-width: 275px;
+}
+.experience .left p {
+	font-size: 1rem;
+  font-family: Verdana,Geneva,sans-serif;
+}
+@media only screen and (min-width: 44em) {
+	.experience .left {
+		padding-right: 3rem;
+		flex-basis: 33%;
+		max-width: 33%;
+		text-align: right;
+	}
+	.experience {
+		flex-wrap: nowrap;
+	}
+	.mid-header {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.mid-header h2 {
+		max-width: 67%;
+		flex-basis: 67%;
+		margin-left: 275px;
+	}
+}
+
+@media only screen and (max-width: 391px) {
+	.contact {
+		justify-content: space-around;
+	}
+	address a {
+		text-align: center;
+	}
+}
